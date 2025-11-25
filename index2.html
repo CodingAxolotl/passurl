@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="myBox" type="text" placeholder="Type something...">
+
+<script>
+// Get the URL’s query parameters
+const params = new URLSearchParams(window.location.search);
+
+// Get the value of ?txt=
+const text = params.get("txt");
+
+// If txt exists, put it in the textbox
+if (text) {
+    document.getElementById("myBox").value = text;
+}
+</script>
+
+</body>
+</html>
